@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    max-width: 1200px;
+    margin:0 auto;
+}
+/*-------------------ANIMATIONS FOR LOGO------------*/
+#balloons{
+    animation: dance 14s infinite alternate;
+}
+#_1{
+    fill:blue;
+}
+#_2{
+    fill:yellow;
+}
+#_3{
+    fill:red;
+}
+#_4{
+    fill:green;
+}
+#_5{
+    fill:orange;
+}
+.cls-7{
+    fill: white;
+}
+@keyframes dance {
+    0%{
+        transform: rotate(-20deg);
+    }
+    25%{
+        transform: rotate(160deg); 
+    }
+    75% {
+        transform: rotate(-360deg);
+  }
+}
+/*-------------------END OF ANIMATIONS----------*/
+/*---------------------Main Page----------------*/
+#main{
+    text-align: center;
+    background-color: darkgray;
+    background-image: url(../images/playground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1750px;
+}
+#main h1{
+    position: absolute;
+    top:30%;
+    left: 35%;
+    color: darkblue
+}
+/*----------------------PHOTOS-----------*/
+.polaroid {
+    margin-left: 80px;
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    -webkit-perspective: 1246px;
+}
+/*--------------------RIGHT PHOTO-----------*/
+.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+/*--------------------LEFT PHOTOS-----------*/
+.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+/*--------------------FLIP PHOTOS------------*/
+.flip{
+    width: 284px;
+    height: 266px;
+    text-align: center;
+    transition: all 1s ease;
+    -webkit-transform-style:preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.back img{
+    width: 284px;
+    height: 246px;
+}
+.front{
+    width: 284px;
+    height: 246px;
+    background-color: #232b2b;
+}
+.front, .back{
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.flip:hover{
+    transform: rotateY(180deg);
+}
+/*------------------END OF FLIP PHOTOS------*/
+/*------------------PARALLAX EFFECT---------*/
+#parallax {/*----------------PARALLAX No1-----*/
+    height: 800px;
+    width: 100%;
+    background-image: url("../images/lawn.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 180%;
+    left: 0;
+}
+#parallax p{
+    margin-top: 300px;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 400;
+    color: ghostwhite;
+}
+#imagelawn{/*----------------PARALLAX No2-------*/
+    margin-top: 400px;
+    height:1200px;
+    background-image: url(../images/playground2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    background-color: antiquewhite;
+}
+section h1{
+    text-align: center;
+}
+section svg{
+    margin-left: 800px;
+}
